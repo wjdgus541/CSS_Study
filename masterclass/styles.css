@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    /* Main Axis */
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 500px;
+    
+    /* Criss Axis 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    */
+}
+.box {
+    background: rgb(95, 202, 112);
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+.box:nth-child(2){
+    align-self: center;
+}
+.box:nth-child(3){
+    align-self: flex-end;
+}
