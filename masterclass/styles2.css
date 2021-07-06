@@ -1,0 +1,18 @@
+.father {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.child {
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border : 1px solid black;
+    color: white;
+    flex-basis: 300px;
+}
+.child:nth-child(2){
+    background: black;
+    flex-grow:1;
+}
