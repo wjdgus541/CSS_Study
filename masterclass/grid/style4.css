@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    height: 250vh;
+    gap: 2px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    place-content:center center ;
+}
+.header {
+    background: burlywood;
+    color: white;
+    text-align: center;
+}
+.content {
+    background: rgb(246, 241, 132);
+    color: white;
+    text-align: center;
+}
+.nav {
+    background: rgb(164, 241, 116);
+    color: white;
+    text-align: center;
+}
+.footer {
+    background: rgb(89, 226, 214);
+    color: white;
+    text-align: center;
+}

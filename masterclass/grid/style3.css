@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr ;
+}
+.header {
+    background: burlywood;
+    color: white;
+    text-align: center;
+    grid-area: header;
+}
+.content {
+    background: rgb(246, 241, 132);
+    color: white;
+    text-align: center;
+    grid-area: content;
+}
+.nav {
+    background: rgb(164, 241, 116);
+    color: white;
+    text-align: center;
+    grid-area: nav;
+}
+.footer {
+    background: rgb(89, 226, 214);
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
