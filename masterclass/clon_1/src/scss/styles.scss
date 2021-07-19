@@ -69,7 +69,7 @@ header {
   } 
 }
 main {
-  padding-left: $fixedWidth;
+  margin-left: $fixedWidth;
   .movie{
     background: linear-gradient(
       0deg,
