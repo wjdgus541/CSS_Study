@@ -11,9 +11,12 @@
 
 body {
     font-family: "Caladea";
-    padding: 0px 140px;
     margin: 0;
     width:100%;
+    &> *:not(.footer){
+        padding: 0px 140px;
+
+    }
 }
 header {
     position: fixed;
@@ -179,27 +182,18 @@ header {
             font-size: 30px;
         }
         a {
-            width: 200px;
-            border: solid 2px;
-            padding: 20px 0px;
             text-align: center;
             text-decoration: none;
             color: $black;
             @extend %miniTitle;
-            font-size: 14px;
+            font-size: 10px;
             font-weight: 600;
-            text-transform: uppercase;
-            transition: color .3s linear, background 0.3s linear;
-            &:hover {
-                background-color: $black;
-                color: white;
-                border : solid 2px $black;
-            }
+            letter-spacing: 1px;
+            text-transform: uppercase;           
         }
     }
 }
 .gallery {
-    height: 80vh;
     width: 100%;
     .gallery__poster {
         display: grid;
@@ -213,7 +207,52 @@ header {
         }
     }
 }
-.footer {
+.follow {
+    margin-top: 100px;
     display: flex;
-    height: 70vh;
+    justify-content: center;
+    .follow__text{
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    a {
+        font-size: 35px;
+        text-decoration: none;
+        color: rgb(101, 101, 101);
+    }
+}
+.footer {
+    @extend %miniTitle;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F3EDE8;
+    margin-top:100px;
+    padding:65px 0;
+    .footer__column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 1px;
+        &:nth-child(2) {
+            border-right:1px solid $black;
+            border-left:1px solid $black;
+        }
+        .footer__title {
+            opacity: 0.5;
+        }
+        ul {
+            margin: 20px 0 0 0;
+            padding: 0;
+            list-style:  none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
 }
