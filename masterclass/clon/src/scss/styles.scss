@@ -11,8 +11,8 @@ body {
   height:100vh;
   background-color: $bg;
   display:grid;
-  grid-template-columns: 1fr 580px 1fr;; 
-  grid-template-rows: 1fr 580px 1fr;
+  grid-template-columns: 1.2fr 2.4fr 1.2fr;; 
+  grid-template-rows: 1fr 5fr 1fr;
   gap: 1px;
   & > * {
     background-color: white;
@@ -22,47 +22,24 @@ body {
     color:$bg;
   }
   .center-image {
-    
     grid-column: 2 / 3;
     grid-row: 2 / -2;
   }
   .number_row{
     background-color: $bg;
     display: grid;
-    gap: 1px;
-    height: 100%;
-    align-items: stretch;
     grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 1px;
     .number {
       background-color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
-      transition: color 0.3s linear, background-color 0.3s linear;
-      &:hover {
+      &: hover {
         background-color: $bg;
-        color: white;
-      }
+        color:white;
+      } 
     }
-  }
-  .scrolling__text {
-    white-space: nowrap;
-    overflow: hidden;
-    span {
-      animation: scrollText 1s linear infinite;
-    }
-  }
-}
-
-@keyframes scrollText {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(100px);
-  }
-  from {
-    transform: translateX(0px);
   }
 }
