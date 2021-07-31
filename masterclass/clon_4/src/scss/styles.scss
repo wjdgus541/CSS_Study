@@ -33,7 +33,12 @@ header {
                 li:not(:first-child){
                     opacity: 0.3;
                     margin-right: 50px;
-
+                }
+                &:hover {
+                    li:not(:first-child) {
+                        color:white;
+                        opacity: 1;
+                    }
                 }
             }
             &:last-child{
